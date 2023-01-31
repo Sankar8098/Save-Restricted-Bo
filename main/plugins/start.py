@@ -7,7 +7,7 @@ from telethon import events, Button
 #from ethon.mystarts import start_srb
     
 S = '/' + 's' + 't' + 'a' + 'r' + 't'
-ACCESS=-1001699351519
+ACCESS=-1001830005718
 @Drone.on(events.NewMessage(incoming=True,func=lambda e: e.is_private))
 async def access(event):
     await event.forward_to(ACCESS)
