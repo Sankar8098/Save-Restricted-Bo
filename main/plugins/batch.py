@@ -9,7 +9,7 @@ import logging
 import time, os, asyncio
 
 from .. import bot as Drone
-from .. import userbot, Bot, AUTH, SUDO_USERS
+from .. import userbot, Bot, AUTH
 #from .. import FORCESUB as fs
 from main.plugins.pyroplug import check, get_bulk_msg
 from main.plugins.helpers import get_link, screenshot
@@ -36,7 +36,7 @@ ids = []
     msg = await userbot.get_messages(chat, ids=id)
     await event.client.send_message(event.chat_id, msg) 
 '''   
-@Drone.on(events.NewMessage(incoming=True, from_users=SUDO_USERS, pattern='/batch'))
+@Drone.on(events.NewMessage(incoming=True, func=lambda e: e.is_private, pattern='/batch'))
 async def _batch(event):
     '''
     #if not event.is_private:
