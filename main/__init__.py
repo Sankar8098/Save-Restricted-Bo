@@ -15,12 +15,12 @@ logging.getLogger("telethon").setLevel(logging.WARNING)
 
 
 # variables
-API_ID = config("API_ID", default=15020243, cast=int)
-API_HASH = config("API_HASH", default='820b93205717fda37ca3cd352a54c544')
-BOT_TOKEN = config("BOT_TOKEN", default=None)
-SESSION = config("SESSION", default=None)
-FORCESUB = config("FORCESUB", default=None)
-AUTH = config("AUTH", default=None)
+API_ID = 7498895
+API_HASH = "5204d72f395c291b7257df9631a659ee"
+BOT_TOKEN = "6147237683:AAHbwDk5AOBpcyIsm0EsHd-Ks0EWg9nxFIw"
+SESSION = "BQBA8kkN_L8jzlnoZDMK2V4Jg6sEgg3VH4XN5CrUSSgw8E47QIlskUIVdo6FpzhQiBxcqYmcXeRytdR5XxTQr4qhmmrUTnztvxeA7JEWFPppX_ky205PcxcTE3QT6TojGHdbJusyWI7vFq48msS_Hcgw-TDQgAdg4ZLXpf9MospARfmnXwkedfDQuH0xF4A0toKe0qoZEvfqiwKDHysAIjKnmXr4pMqZmB7jf_mN7pHfKPID0poZkw6bZiFaaA713CbKCus9k4cMox1XwRTLtDmrP6TrrIUrKaPf5dxr-MOs18PxchPuuTSo3-yDVi39gC4WlJr3212-L5ZF-oYA376_AAAAAUaS2OoA"
+FORCESUB = "KASHIRBOTS_premium"
+AUTH = 5478996202
 bot = TelegramClient('bot', API_ID, API_HASH).start(bot_token=BOT_TOKEN) 
 
 #userbot = Client(
